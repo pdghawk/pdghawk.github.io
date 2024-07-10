@@ -2,7 +2,7 @@
 title = 'ESM3 is out: A first summary'
 date = 2024-07-02T11:55:56-04:00
 tags = ['protein structure', 'language models']
-draft = true
+draft = false
 +++
 
 On June 25th 2024 the ESM authors placed a [preprint](https://evolutionaryscale-public.s3.us-east-2.amazonaws.com/research/esm3.pdf) online (also on [BioRxiv](https://www.biorxiv.org/content/10.1101/2024.07.01.600583v1.full.pdf)[^esm3] on July 2nd) titled "Simulating 500 million years of evolution with a language model".  
