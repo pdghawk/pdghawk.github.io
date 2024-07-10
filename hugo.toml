@@ -1,0 +1,75 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Personal Site'
+theme = 'anatole'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+          inline = [['$', '$']]
+
+[params]
+title = "Peter Hawkins, PhD"
+author = "Peter Hawkins, PhD"
+profilePicture = "images/personal/PGH_headshot.jpg"
+description = """
+ML at scale for Life Sciences 
+Scientist, Physicist, Dad 
+
+<span style="font-size:0.7em;">All opinions expressed in posts are mine alone</span>
+<span style="font-size:0.7em;">Built with Hugo and the Anatole theme</span>
+"""
+math = true
+enableDarkMode = true
+defaultTheme = "dark"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://linkedin.com/in/peter-hawkins-scientist"
+
+[[params.socialIcons]]
+icon = "fas fa-scroll"
+title = "Google-scholar"
+url = "https://scholar.google.com/citations?user=v8XNr6EAAAAJ&hl=en"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "Github"
+url = "https://github.com/pdghawk"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+  
+  [[menu.main]]
+  name = "About"
+  weight = 200
+  identifier = "about"
+  url = "/about/"
+  
+  [[menu.main]]
+  name = "Posts"
+  weight = 300
+  identifier = "posts"
+  url = "/posts/"
+
+  [[menu.main]]
+  name = "Publications"
+  weight = 300
+  identifier = "publications"
+  url = "/publications/"
+
+copyright = "Peter Hawkins 2024-{{ YEAR }}"
